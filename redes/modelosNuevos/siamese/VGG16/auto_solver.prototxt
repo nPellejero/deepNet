@@ -1,0 +1,22 @@
+#allLabsCrop Train: 128813 y test: 24260
+# cleaned: 23300 test y 123407 train.
+# iteracion completa de train: 1928
+test_iter: 1 #20 para fer2013 #335 para amfed # 12 para genkis
+test_interval: 500 # para cohn #1000 para fer #1000 para amfed. 
+display: 100
+max_iter: 100000  # 20 iteraciones completas
+base_lr: 0.0001
+lr_policy: "poly"
+power: 4
+#gamma: 0.1
+#base_lr: 0.03
+#lr_policy: "exp"
+#gamma: 0.9
+momentum: 0.9
+weight_decay: 0.0000005 #0.00005
+#stepsize: 20000
+snapshot: 2000
+snapshot_prefix: "snapshot"
+solver_mode: GPU
+net: "/home/npellejero/tesis/AMFED/redes/modelosNuevos/siamese/VGG16/train_val.prototxt"
+solver_type: SGD

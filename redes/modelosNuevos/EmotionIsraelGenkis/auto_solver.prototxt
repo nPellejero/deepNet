@@ -1,0 +1,21 @@
+# 1175 test y 2641 train.
+# iteracion completa de train: 11 
+test_iter: 19 # una iteracion de test completa
+test_interval: 22 # 2 iteracion completa
+display: 13
+max_iter: 1300  # 40 iteraciones completas
+base_lr: 0.001 # 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 75
+#base_lr: 0.001
+#lr_policy: "inv"
+#gamma: 0.1
+#power: 0.75
+momentum: 0.9
+weight_decay: 0.000000005 #0.00005
+snapshot: 850
+snapshot_prefix: "snapshot"
+solver_mode: GPU
+net: "/home/npellejero/tesis/AMFED/redes/modelosNuevos/EmotionIsraelGenkis/train_val.prototxt"
+solver_type: SGD

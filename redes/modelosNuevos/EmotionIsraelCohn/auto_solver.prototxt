@@ -1,0 +1,21 @@
+#Train: 728 y test: 250
+# iteracion completa de train: 3
+# iteracion completa de test: 4
+test_iter: 4 # una iteracion de test completa
+test_interval: 6 # 2 iteracion completa
+display: 10
+max_iter: 50000  # 20 iteraciones completas
+base_lr: 0.000001 # 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 15000
+#base_lr: 0.001
+#lr_policy: "exp"
+#gamma: 0.75
+momentum: 0.9
+weight_decay: 0.0000005 #0.00005
+snapshot: 500
+snapshot_prefix: "snapshot"
+solver_mode: GPU
+net: "/home/npellejero/tesis/AMFED/redes/modelosNuevos/EmotionIsraelCohn/train_val.prototxt"
+solver_type: SGD

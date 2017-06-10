@@ -1,0 +1,27 @@
+# please cite:
+# @article{SqueezeNet,
+#     Author = {Forrest N. Iandola and Matthew W. Moskewicz and Khalid Ashraf and Song Han and William J. Dally and Kurt Keutzer},
+#     Title = {SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and $<$1MB model size},
+#     Journal = {arXiv:1602.07360},
+#     Year = {2016}
+# }
+
+test_iter: 8 #39  para cohnPrproc #20 para Fer(batch256)#335 para AMFED #19 para genkis 
+test_interval: 400 # para cohnpre #500 para fer
+base_lr: 0.0005
+display: 50
+max_iter: 100000
+#stepsize: 10000
+#iter_size: 16 #global batch size = batch_size * iter_size
+lr_policy: "poly"
+gamma: 0.2
+power: 1
+momentum: 0.9
+weight_decay: 0.00005
+snapshot: 110000
+snapshot_prefix: "snapshot"
+solver_mode: GPU
+#random_seed: 42
+net: "/home/npellejero/tesis/AMFED/redes/modelosNuevos/SQ/SqueezeNet-master/SqueezeNet_v1.1/train_val.prototxt" #we typically do `cd SqueezeNet_v1.0; caffe train <args>` 
+#test_initialization: false
+#average_loss: 40

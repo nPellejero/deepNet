@@ -1,0 +1,23 @@
+#allLabsCrop Train: 128813 y test: 24260
+# cleaned: 23300 test y 123407 train.
+# cleanedWTest: 21452 val y 23300 test y 101955 train.
+# iteracion completa de train: 1593 en cleanedWTest
+test_iter: 9 # 20 para fer2013  #335 para amfed # 12 para genkis 
+test_interval: 400 # 1000 para fer # 500 para genkis 
+display: 50
+max_iter: 120000  
+base_lr: 0.005 
+lr_policy: "poly"
+#gamma: 0.5
+#base_lr: 0.005
+#lr_policy: "inv"
+#gamma: 0.2
+power: 2
+momentum: 0.5
+weight_decay: 0.05 #0.000055
+#stepsize: 30000
+snapshot: 200000
+snapshot_prefix: "snapshot"
+solver_mode: GPU
+net: "/home/npellejero/tesis/AMFED/redes/modelosNuevos/GAN/train_val.prototxt"
+solver_type: SGD
