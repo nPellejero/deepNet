@@ -1,0 +1,13 @@
+F0814 19:57:43.444176  9905 io.cpp:36] Check failed: fd != -1 (-1 vs. -1) File not found: ../redes/modelosNuevos/SQ/SqueezeNet-master/SqueezeNet_v1.1/auto_solver.prototxt
+*** Check failure stack trace: ***
+    @     0x7f7746cd8b2d  google::LogMessage::Fail()
+    @     0x7f7746cda88d  google::LogMessage::SendToLog()
+    @     0x7f7746cd86f2  google::LogMessage::Flush()
+    @     0x7f7746cdb30e  google::LogMessageFatal::~LogMessageFatal()
+    @     0x7f774cc24938  caffe::ReadProtoFromTextFile()
+    @     0x7f774cc33f76  caffe::ReadSolverParamsFromTextFileOrDie()
+    @           0x4086d3  train()
+    @           0x405d47  main
+    @     0x7f773f01eb45  (unknown)
+    @           0x406568  (unknown)
+Aborted
