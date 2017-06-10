@@ -1,0 +1,15 @@
+test_iter: 260
+test_interval: 288
+base_lr: 0.01
+display: 10
+max_iter: 8640
+lr_policy: "step"
+gamma: 0.1
+momentum: 0.9
+weight_decay: 0.0005
+stepsize: 2852
+snapshot: 0
+snapshot_prefix: "snapshot"
+solver_mode: GPU
+net: "/home/npellejero/tesis/AMFED/redes/alexSmileDigitsHdf51/train_val.prototxt"
+solver_type: SGD

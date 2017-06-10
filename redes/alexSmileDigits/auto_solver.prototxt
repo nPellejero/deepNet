@@ -1,0 +1,16 @@
+# iteracion completa de train: 286
+test_iter: 260 # una iteracion de test completa
+test_interval: 1430 # 5 iteraciones completas
+base_lr: 0.01
+display: 100
+max_iter: 17160 # 60 iteraciones completas
+lr_policy: "step"
+gamma: 0.1
+momentum: 0.9
+weight_decay: 0.0005
+stepsize: 6000
+snapshot: 20000
+snapshot_prefix: "snapshot"
+solver_mode: GPU
+net: "/home/npellejero/tesis/AMFED/redes/alexSmileDigits/train_val.prototxt"
+solver_type: SGD

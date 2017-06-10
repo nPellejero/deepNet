@@ -1,0 +1,14 @@
+net: "/home/npellejero/tesis/AMFED/redes/alexSingleLMDB/train_val.prototxt"
+test_iter: 257
+test_interval: 50 
+lr_policy: "step"
+gamma: 0.1
+power: 0.75
+stepsize: 10000
+display: 10
+max_iter: 15000
+snapshot: 50000
+snapshot_prefix: "caffe_alexnet_train"
+base_lr: 0.001
+momentum: 0.95
+weight_decay: 0.0000005
