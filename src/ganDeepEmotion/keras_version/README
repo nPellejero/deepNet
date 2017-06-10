@@ -1,0 +1,18 @@
+Instructions:
+
+1. Install keras
+2. python gan_class.py
+
+Está implementada versión convolucional de GAN. Todavía no hemos observado entrenamiento exitoso con este código. Le agregue además un módulo que entrena con pesos compartidos de discriminador una red de clasificación utilizando los datos etiquetados. La idea, como charlamos es que esto le de mayor estabilidad al algoritmo.
+
+
+To do's:
+
+- (HECHO) Verificar que los pesos del discriminador no se modifiquen en la etapa de entrenamiento del generador
+- (HECHO) Modificar los optimizers. Chequear learning rates. Pienso (Lucas) que RMSprop para el generador puede ser mejor
+- Mostrar y guardar en archivo losses y % de errores.
+- (HECHO) Mejorar los png generados. (actualemente la salida no respeta la resolución original)
+- (HECHO) Agregar función main y función get_args (argparse).
+- Agregar opcion para incluir o no el clasificador (es decir poder correr el GAN clásico o con clasificador)
+- Administrar mejor el PATH de los datos actualmente hardcodedado.
+- ver que ande cudnn en Keras
